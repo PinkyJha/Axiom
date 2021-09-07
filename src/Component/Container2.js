@@ -27,12 +27,18 @@ const Container2 = () => {
                             <span class="slider round"></span>
                             </label>
                         </div>
-                        <p>Deepak Sharma</p>
-                        <p>2nd Foundation</p>
-                        <p>3012 E Aelaxendar Rd 1002</p>
-                        <p>North Las Vegas, NV 89-30</p>
-                        <p>UNITED STATES</p>
-                        <p>70241552263</p>
+                        <p>Deepak Sharma
+                            <br/>
+                            2nd Foundation
+                            <br/>
+                            3012 E Aelaxendar Rd 1002
+                            <br/>
+                            North Las Vegas, NV 89-30
+                            <br/>
+                            UNITED STATES
+                            <br/>
+                            70241552263
+                        </p>
 
                     </section>
                     <section>
@@ -43,13 +49,18 @@ const Container2 = () => {
                             <span class="slider round"></span>
                             </label>
                         </div>
-                        <p> @Ferya -for KAI </p>
-                        <p><i style={{color:'gray'}}>company</i></p>
-                        <p>89-921 Miapoula Place</p>
-                        <p>Waiane,HI 96792</p>
-                        <p>UNITED STATES</p>
-                        <p><i style={{color:'gray'}}>phone</i></p>
-
+                        <p> @Ferya -for KAI
+                            <br/>
+                            <i style={{color:'gray'}}>company</i>
+                            <br/>
+                            89-921 Miapoula Place
+                            <br/>
+                            Waiane,HI 96792
+                            <br/>
+                            UNITED STATES
+                            <br/>
+                            <i style={{color:'gray'}}>phone</i>
+                        </p>
                     </section>
                 </section>
                 

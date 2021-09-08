@@ -71,7 +71,7 @@ const Container2 = () => {
                 <div className="Tabs">
                     <p style={{color:'blue',width:'10vw',height:'5vh'}}>Select Service</p>
                     <p style={{color:'blue',width:'10vw',height:'5vh'}}>Package</p>
-                    <p style={{color:'white',background:'blue',width:'10vw', borderRadius:'15px',height:'5vh'}}>Details</p>
+                    <p className="detailsss" style={{color:'white',background:'blue',width:'10vw', borderRadius:'15px',height:'5vh'}}>Details</p>
                 </div>
 
                 <div style={{display:'flex',justifyContent:'space-evenly',marginTop:'2vh'}}>
@@ -105,7 +105,7 @@ const Container2 = () => {
                     </div>
                     <div>
                     <p style={{marginBottom:'1vh'}}>Scale Reading<SettingsIcon style={{color:'skyblue'}}/></p>
-                    <input type="text" placeholder="---" style={{height:'5vh',borderRadius:'5px'}}/>
+                    <input className="scaleReading" type="text" placeholder="---" style={{height:'5vh',borderRadius:'5px'}}/>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@ const Container2 = () => {
                     <div>
                         <p style={{marginBottom:'1vh'}}>Custom Package Type</p>
                     <Dropdown>
-                        <Dropdown.Toggle style={{background:'white', color:'black'}} variant="success" id="dropdown-basic">
+                        <Dropdown.Toggle className="Pm-large" style={{background:'white', color:'black'}} variant="success" id="dropdown-basic">
                             PM Large Box
                         </Dropdown.Toggle>
 
@@ -126,30 +126,30 @@ const Container2 = () => {
                     </div>
                     <div>
                         <p style={{marginBottom:'1vh'}}>length</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="12    &nbsp; &nbsp; in"/>
+                        <input className="len-wid" style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="12    &nbsp; &nbsp; in"/>
                     </div>
                     <div>
                         <p style={{marginBottom:'1vh'}}>Width</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="9.25 &nbsp; &nbsp;   in"/>
+                        <input className="len-wid"  style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="9.25 &nbsp; &nbsp;  in"/>
                     </div>
                     <div>
                         <p style={{marginBottom:'1vh'}}>height</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="7.5  &nbsp; &nbsp;   in"/>
+                        <input  className="len-wid"  style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="7.5  &nbsp; &nbsp;   in"/>
                     </div>
                 </div>
 
                 <section style={{display:'flex', justifyContent:'space-evenly',marginTop:'2vh'}}>
                 <div>
                         <p style={{marginBottom:'1vh'}}>Weight</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="1.481 &nbsp; &nbsp; lb"/>
+                        <input className="weight" style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="1.481 &nbsp; &nbsp; lb"/>
                     </div>
                     <div>
                         <p style={{marginBottom:'1vh'}}>Ounces</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="     &nbsp; &nbsp;   oz"/>
+                        <input className="weight"  style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="     &nbsp; &nbsp;   oz"/>
                     </div>
                     <div>
                         <p style={{marginBottom:'1vh'}}>Insurance Amt</p>
-                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="$20.00  &nbsp; &nbsp;   in"/>
+                        <input className="weight"  style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="$20.00  &nbsp; &nbsp;   in"/>
                     </div>
                     <div>
                         <p></p>
@@ -176,8 +176,8 @@ const Container2 = () => {
                     <div>
                             <p style={{marginBottom:'1vh'}}>Content Description 180/250</p>
                         <Dropdown>
-                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
-                                Brust Blizzard Liquid Stra
+                            <Dropdown.Toggle className="stra" style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
+                                Brust Blizzard
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
@@ -191,8 +191,8 @@ const Container2 = () => {
                         <div>
                         <p style={{marginBottom:'1vh'}}>Signature</p>
                         <Dropdown>
-                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
-                                No Signature Required
+                            <Dropdown.Toggle  className="stra" style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
+                                No Signature Requir
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
@@ -204,9 +204,9 @@ const Container2 = () => {
                         </div>
                 </section>
                 <div>
-                        <p style={{marginBottom:'1vh'}}>Dangerous Goods</p>
+                        <p className="Dangerous" style={{marginBottom:'1vh'}}>Dangerous Goods</p>
                         <Dropdown>
-                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit',width:'10vw'}} variant="success" id="dropdown-basic">
+                            <Dropdown.Toggle className="Dangeros-drop" style={{background:'white', color:'black',fontSize:'inherit',width:'10vw'}} variant="success" id="dropdown-basic">
                             ---
                             </Dropdown.Toggle>
 

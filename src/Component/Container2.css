@@ -110,3 +110,85 @@
     border-radius: 50%;
     height: 3vh;
   }
+
+  @media only screen and (max-width:500px){
+    .container2 {
+      width: 84vw;
+      margin-left: -16vw;
+      margin-top: 5vh;
+  }
+  .Tabs {
+    width: 77vw;
+    height: 9vh;
+    /* align-items: center; */
+}
+.detailsss{
+  width: 21vw !important;
+}
+.len-wid{
+  width:15vw !important
+}
+.weight{
+  width: 17vw !important;
+}
+.Con-butyon {
+  width: 9vw;
+}
+.Dangerous{
+  margin-top: 1vh !important;
+}
+.Dangeros-drop{
+  width: 33vw !important;
+}
+.save-button {
+  width: 84vw;
+  margin-left: -16vw;
+  margin-bottom: 5vh;
+}
+  }
+
+@media only screen and (max-width:400px){
+  .container2 {
+    width: 84vw;
+    margin-left: -16vw;
+    margin-top: 5vh;
+}
+.Tabs {
+  width: 77vw;
+  height: 9vh;
+  /* align-items: center; */
+}
+.detailsss{
+width: 21vw !important;
+}
+.len-wid{
+width:13vw !important
+}
+.weight{
+width: 19vw !important;
+}
+.Con-butyon {
+width: 9vw;
+}
+.Dangerous{
+margin-top: 1vh !important;
+}
+.Dangeros-drop{
+width: 33vw !important;
+}
+.save-button {
+width: 84vw;
+margin-left: -16vw;
+margin-bottom: 5vh;
+}
+.scaleReading{
+  width: 27vw !important;
+}
+.Pm-large{
+  width: 29vw;
+    font-size: small;
+}
+.stra{
+  width: 38vw !important;
+}
+}

@@ -2,11 +2,13 @@ import React from 'react'
 import RefreshIcon from '@material-ui/icons/Refresh';
 import './Container2.css'
 import EditIcon from '@material-ui/icons/Edit';
+import { Dropdown } from 'react-bootstrap';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 const Container2 = () => {
     return (
-        <div className="container2">
-            <div>
+        <div >
+            <div className="container2">
                 <div style={{display:'flex',justifyContent:'space-evenly', borderBottom:'1px solid lightgrey'}}>
                     <p style={{display:'flex'}}>LOCATEINV 5549475 &nbsp; <RefreshIcon style={{color:'skyblue'}}/></p>
                     <span>
@@ -39,7 +41,8 @@ const Container2 = () => {
                             <br/>
                             70241552263
                         </p>
-
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1"> Return address is different <br/> from sender address</label><br/>
                     </section>
                     <section>
                         <div className="sender-section">
@@ -61,9 +64,179 @@ const Container2 = () => {
                             <br/>
                             <i style={{color:'gray'}}>phone</i>
                         </p>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1">  &nbsp;Residential</label><br/>
                     </section>
                 </section>
+                <div className="Tabs">
+                    <p style={{color:'blue',width:'10vw',height:'5vh'}}>Select Service</p>
+                    <p style={{color:'blue',width:'10vw',height:'5vh'}}>Package</p>
+                    <p style={{color:'white',background:'blue',width:'10vw', borderRadius:'15px',height:'5vh'}}>Details</p>
+                </div>
+
+                <div style={{display:'flex',justifyContent:'space-evenly',marginTop:'2vh'}}>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>units</p>
+                    <Dropdown >
+                        <Dropdown.Toggle style={{background:'white', color:'black'}}  variant="success" id="dropdown-basic">
+                            In/lb/oz
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Scale</p>
+                    <Dropdown>
+                        <Dropdown.Toggle style={{background:'white', color:'black'}} variant="success" id="dropdown-basic">
+                            Station
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
+                    <div>
+                    <p style={{marginBottom:'1vh'}}>Scale Reading<SettingsIcon style={{color:'skyblue'}}/></p>
+                    <input type="text" placeholder="---" style={{height:'5vh',borderRadius:'5px'}}/>
+                    </div>
+                </div>
+
+                <div style={{display:'flex',marginTop:'2vh',justifyContent:'space-evenly'}}>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Custom Package Type</p>
+                    <Dropdown>
+                        <Dropdown.Toggle style={{background:'white', color:'black'}} variant="success" id="dropdown-basic">
+                            PM Large Box
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>length</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="12    &nbsp; &nbsp; in"/>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Width</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="9.25 &nbsp; &nbsp;   in"/>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>height</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="7.5  &nbsp; &nbsp;   in"/>
+                    </div>
+                </div>
+
+                <section style={{display:'flex', justifyContent:'space-evenly',marginTop:'2vh'}}>
+                <div>
+                        <p style={{marginBottom:'1vh'}}>Weight</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="1.481 &nbsp; &nbsp; lb"/>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Ounces</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="     &nbsp; &nbsp;   oz"/>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Insurance Amt</p>
+                        <input style={{width:'5vw',height:'5.5vh',borderRadius:'5px'}} type="text" placeholder="$20.00  &nbsp; &nbsp;   in"/>
+                    </div>
+                    <div>
+                        <p></p>
+                    <button className="Con-butyon"> +</button>
+                    </div>
+                </section>
+
+                <section style={{display:'flex', justifyContent:'space-evenly',marginTop:'4vh'}}>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Total Quantity</p>
+                        <p>5</p>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Total Weight</p>
+                        <p>1.481 lb</p>
+                    </div>
+                    <div>
+                        <p style={{marginBottom:'1vh'}}>Ounces</p>
+                        <p>0 OZ</p>
+                    </div>
+                </section>
+
+                <section style={{display:'flex', justifyContent:'space-evenly',marginTop:'2vh'}}>
+                    <div>
+                            <p style={{marginBottom:'1vh'}}>Content Description 180/250</p>
+                        <Dropdown>
+                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
+                                Brust Blizzard Liquid Stra
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
+
+                        <div>
+                        <p style={{marginBottom:'1vh'}}>Signature</p>
+                        <Dropdown>
+                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit'}} variant="success" id="dropdown-basic">
+                                No Signature Required
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
+                </section>
+                <div>
+                        <p style={{marginBottom:'1vh'}}>Dangerous Goods</p>
+                        <Dropdown>
+                            <Dropdown.Toggle style={{background:'white', color:'black',fontSize:'inherit',width:'10vw'}} variant="success" id="dropdown-basic">
+                            ---
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
                 
+                    <section style={{display:'flex', justifyContent:'space-evenly',marginTop:'2vh'}}>
+                        <div>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1">  &nbsp;Dangerous Good</label><br/>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1">  &nbsp;Contains Live bees </label><br/>
+                        </div>
+
+                    </section>
+                    <div  style={{marginTop:'2vh',marginBottom:'2vh'}}>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1">  &nbsp;Send notification email </label><br/>
+                        </div>
+
+            </div>
+            <div className="save-button">
+                <button>Save Shipment Form</button>
             </div>
         </div>
     )
